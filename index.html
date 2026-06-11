@@ -2,9 +2,9 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>druk · GitHub App setup</title>
+<title>druks · GitHub App setup</title>
 <body style="font:16px/1.5 system-ui; max-width:40rem; margin:4rem auto; padding:0 1rem">
-<h1 style="font-size:1.2rem">druk · GitHub App setup</h1>
+<h1 style="font-size:1.2rem">druks · GitHub App setup</h1>
 <p id="status">Reading manifest…</p>
 <noscript><p>This page needs JavaScript to forward the manifest to GitHub.</p></noscript>
 <form id="f" method="post" hidden>
@@ -17,7 +17,7 @@
     var params = new URLSearchParams(location.hash.slice(1));
     var org = params.get("org") || "";
     var b64 = params.get("manifest") || "";
-    if (!b64) throw new Error("missing #manifest fragment — generate this link with druk's install.sh --apps");
+    if (!b64) throw new Error("missing #manifest fragment — generate this link with druks's install.sh --apps");
     if (!/^[A-Za-z0-9-]*$/.test(org)) throw new Error("invalid org slug");
     // The manifest rides in the URL fragment, so it never reaches this page's
     // server (or any server) — it goes browser → github.com only.
