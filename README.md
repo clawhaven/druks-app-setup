@@ -1,11 +1,11 @@
-# druk-app-setup
+# druks-app-setup
 
 Static helper for [GitHub's App manifest flow](https://docs.github.com/en/apps/sharing-github-apps/registering-a-github-app-from-a-manifest),
 which only accepts a manifest via form POST — so a plain link can't reach it
-directly. druk's `install.sh --apps` prints links into this page instead:
+directly. druks's `install.sh --apps` prints links into this page instead:
 
 ```
-https://clawhaven.github.io/druk-app-setup/#org=<org>&manifest=<base64url-json>
+https://clawhaven.github.io/druks-app-setup/#org=<org>&manifest=<base64url-json>
 ```
 
 The page decodes the manifest from the URL fragment and auto-submits it to
